@@ -1,0 +1,3 @@
+import mongoose from 'mongoose';
+const schema=new mongoose.Schema({userId:{type:mongoose.Schema.Types.ObjectId,ref:'User',required:true,unique:true,index:true},farmName:{type:String,required:true},farmerName:String,farmLocation:String,city:String,state:String,pincode:String,cropTypes:[String],farmingMethod:{type:String,enum:['organic','conventional','mixed'],default:'mixed'},description:String,phone:String,profileImage:String,verificationStatus:{type:String,enum:['pending','approved','rejected'],default:'pending',index:true}}, {timestamps:true});
+export default mongoose.model('FarmerProfile',schema);

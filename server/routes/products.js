@@ -1,0 +1,2 @@
+import {Router} from 'express'; import {protect,allowRoles} from '../middleware/auth.js'; import {list,getOne,create,update,remove,farmerProducts} from '../controllers/productController.js';
+const r=Router();r.get('/',list);r.get('/mine',protect,allowRoles('farmer'),farmerProducts);r.get('/:id',getOne);r.post('/',protect,allowRoles('farmer'),create);r.put('/:id',protect,allowRoles('farmer'),update);r.delete('/:id',protect,allowRoles('farmer'),remove);export default r;

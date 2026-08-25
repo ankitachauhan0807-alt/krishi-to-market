@@ -1,0 +1,1 @@
+import {Router} from 'express';import {protect,allowRoles} from '../middleware/auth.js';import {create,product,farmer} from '../controllers/reviewController.js';const r=Router();r.post('/',protect,allowRoles('consumer'),create);r.get('/product/:id',product);r.get('/farmer/:id',farmer);export default r;

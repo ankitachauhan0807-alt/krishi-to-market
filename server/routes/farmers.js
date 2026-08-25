@@ -1,0 +1,1 @@
+import {Router} from 'express'; import {protect,allowRoles} from '../middleware/auth.js'; import {list,getOne,profile,stats} from '../controllers/farmerController.js'; const r=Router();r.get('/',list);r.get('/stats',protect,allowRoles('farmer'),stats);r.get('/:id',getOne);r.put('/profile',protect,allowRoles('farmer'),profile);export default r;

@@ -1,0 +1,4 @@
+import mongoose from 'mongoose';
+const schema=new mongoose.Schema({farmer:{type:mongoose.Schema.Types.ObjectId,ref:'FarmerProfile',required:true,index:true},name:{type:String,required:true,trim:true,index:true},description:String,category:{type:mongoose.Schema.Types.ObjectId,ref:'Category',required:true,index:true},price:{type:Number,required:true,min:0},unit:{type:String,enum:['kg','gram','litre','dozen','piece','packet'],default:'kg'},quantityAvailable:{type:Number,required:true,min:0},minimumOrderQuantity:{type:Number,default:1,min:1},images:[String],farmingMethod:String,harvestDate:Date,location:{type:String,index:true},isOrganic:{type:Boolean,default:false,index:true},isAvailable:{type:Boolean,default:true,index:true},rating:{type:Number,default:0},ratingCount:{type:Number,default:0}},{timestamps:true});
+schema.index({name:'text',description:'text',location:'text'});
+export default mongoose.model('Product',schema);

@@ -1,0 +1,1 @@
+import {Router} from 'express'; import {protect,allowRoles} from '../middleware/auth.js'; import {create,mine,getOne,updateStatus} from '../controllers/orderController.js'; const r=Router();r.post('/',protect,allowRoles('consumer'),create);r.get('/',protect,mine);r.get('/:id',protect,getOne);r.put('/:id/status',protect,allowRoles('farmer','admin'),updateStatus);export default r;
