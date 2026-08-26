@@ -16,7 +16,7 @@ const productImages = {
   Onion: img('1508747703725-719777637510'),
   Carrot: img('1590868309235-ea34bed7bd7f'),
   Spinach: img('1576045057995-568f588f82fb'),
-  Mango: img('1526511253005-9a4a8cde2956'),
+  Mango: 'https://harvesttotable.com/wp-content/uploads/2019/11/Mango-bigstock-Tropical-Mango-Tree-With-Big-R-288199537-scaled.jpg',
   Banana: img('1481349518771-20055b2a7b24'),
   Apple: img('1579613832125-5d34a13ffe2a'),
   Milk: img('1550583724-b2692b85b150'),
