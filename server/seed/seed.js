@@ -30,7 +30,7 @@ const productImages = {
   'Mustard Oil': img('1474979266404-7eaacbcd87c5'),
   'Green Peas': img('1583663848850-46af132dc08e'),
   Guava: img('1536511132770-e5058c7e8c46'),
-  Jaggery: img('1601050690597-df0568f70950')
+  Jaggery: 'https://healthjade.com/wp-content/uploads/2017/10/jaggery.jpg'
 };
 
 const farmers = [
