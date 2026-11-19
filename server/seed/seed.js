@@ -23,7 +23,7 @@ const productImages = {
   Paneer: img('1452195100486-9cc805987862'),
   Curd: img('1488477181946-6428a0291777'),
   'Basmati Rice': img('1586201375761-83865001e31c'),
-  Wheat: 'https://www.gettyimages.in/detail/photo/wheat-berries-background-royalty-free-image/171553200',
+  Wheat: 'https://www.gettyimages.in/photos/wheat-seed',
   Lentils:  'https://cdn.britannica.com/14/157214-050-3A82D9CD/kinds-lentils.jpg',
   Chickpeas: img('1515543904379-3d757abe63ea'),
   'Organic Honey':  'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80',
