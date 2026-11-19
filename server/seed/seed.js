@@ -24,7 +24,7 @@ const productImages = {
   Curd: img('1488477181946-6428a0291777'),
   'Basmati Rice': img('1586201375761-83865001e31c'),
   Wheat: 'https://images.unsplash.com/photo-1574323347407-f5e1c5a6ec32?w=800&q=80',
-  Lentils: img('1515543904379-3d757abe63ea'),
+  Lentils:  'https://images.unsplash.com/photo-1585996483596-6d80e0c2d0e4?w=800&q=80',
   Chickpeas: img('1515543904379-3d757abe63ea'),
   'Organic Honey':  'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80',
   'Mustard Oil': img('1474979266404-7eaacbcd87c5'),
